@@ -16,10 +16,10 @@ public class JpaMain {
 
          try {
              // 멤버 추가
-//             Member member = new Member();
-//             member.setId(1L);
-//             member.setName("HelloA");
-//             em.persist(member);
+             Member member = new Member();
+             member.setId(1L);
+             member.setName("HelloA");
+             em.persist(member);
 
              // 멤버 조회
 //             Member findMember = em.find(Member.class,1L);
@@ -40,7 +40,7 @@ public class JpaMain {
 //             for (Member member : result) {
 //                 System.out.println(member.getName());
 //             }
-             
+
              tx.commit();
          }catch (Exception e){
              tx.rollback();
